@@ -18,3 +18,5 @@ parse :: Parser a -> String -> [(a, String)] --설명 인자는 자료형이 각
 parse x ps = x ps
 return_ :: a -> Parser a
 return_ v = \xs -> [(v, xs)]
+
+num = [x | x <- [1..]]
